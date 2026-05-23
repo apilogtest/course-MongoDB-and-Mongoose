@@ -22,7 +22,7 @@ Person = mongoose.model("Person", personSchema);
 // Exerc. 3
 const createAndSavePerson = (done) => {
   const person = new Person({
-    name: John,
+    name: "John",
     age: 32,
     favoriteFoods: ["Sushi"] 
   });
