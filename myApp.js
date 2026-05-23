@@ -22,9 +22,9 @@ Person = mongoose.model("Person", personSchema);
 // Exerc. 3
 const createAndSavePerson = (done) => {
   const person = new Person({
-    name: "John",
-    age: 25,
-    favoriteFood: "Lasagna"
+    name: { type: String, required: true },
+    age: Number,
+    favoriteFood: [ String ] 
   });
 
   person.save((err, data) => {
